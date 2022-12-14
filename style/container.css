@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "ninja";
+  src: url("go3.ttf");
+}
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 6;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.container .ol {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background: rgba(34, 34, 34, 0.6);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 250ms;
+  cursor: pointer;
+}
+.container .s {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: flex;
+  padding: 10px;
+  z-index: 7;
+  opacity: 0;
+  visibility: hidden;
+}
+.container .s input {
+  background: #aaa;
+  outline: none;
+  text-indent: 10px;
+  border-radius: 100px;
+  font-size: 16px;
+  height: 40px;
+  vertical-align: middle;
+  border: none;
+  width: 60%;
+}
+.container .s button {
+  border-radius: 100px;
+  border: none;
+  background: #111;
+  width: 60px;
+  height: 40px;
+  vertical-align: middle;
+  color: white;
+  outline: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.container .s button svg {
+  width: 30px;
+  fill: white;
+}
+.container .navbar {
+  background: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.container .navbar .mb, .container .navbar .se {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+  transform: rotate(270deg);
+}
+.container .navbar .mb svg, .container .navbar .se svg {
+  fill: white;
+}
+.container .navbar span {
+  font-family: "ninja";
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+.container .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .list a {
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.container .list a:hover {
+  background: darkgray;
+}
+.container .list a div {
+  width: 40px;
+  height: 40px;
+  background: #111;
+  border-radius: 100%;
+  margin: 10px;
+}/*# sourceMappingURL=container.css.map */

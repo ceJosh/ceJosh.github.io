@@ -1,0 +1,47 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+    .id{
+        .pic{
+            border-radius: 100%;
+            background: #111;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            svg{
+                width: 100px;
+                height: 100px;
+                fill: white;
+            }
+        }
+        .num{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-indent: 10px;
+        border-radius: 0 5px 5px 0;
+        &:hover{
+            background: #111;
+            color: white;
+        }
+    }
+}
